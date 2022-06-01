@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ทยากร ธรรมรัตน์ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>18js.array-car.html</title>
+    <script>
+        let car = ['Toyota', 'Tsuzu' , 'mazda', 'Ford']
+    </script>
+</head>
+<body>
+    <script>
+        // document.write(car[0] + '<br>')
+        // document.write(car[1] + '<br>')
+        // document.write(car[2] + '<br>')
+
+        // ดึงข้อมูลจาก Array โดยใช้ For
+        // for (let i = 0; i < car.length; i++) {
+        //     document.write(car[i] + '<br>')
+         // }
+
+        //  ดึงข้อมูลจาก Array โดยใช้ For in
+        //  for (let i in car) {
+        //      document.write(car[i] + '<br>')
+        //  }
+
+        car[4] = 'mg'
+        car[5] = 'Honda'
+        car[4] = 'Nissan'
+        car.pop()
+        car.pop()
+        car.push('BMW')
+        car.shift()
+        car.unshift('Volvo')
+        car.sort()
+        car.reverse()
+        // delete car[2]
+        // ดึงข้อมูลจาก Array โดยใช้ For of
+        for (let i of car) {
+            document.write(i + '<br>')
+        }
+
+        // ดึงข้อมูลาก Array โดยใช้ While
+        // let i = 0 
+        // while (i < car.length) {
+        //     document.write(car[i] + '<br>')
+        //     i++
+        // }
+
+
+    </script>
+</body>
+</html>
